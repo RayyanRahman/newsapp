@@ -1,65 +1,82 @@
 /* Inside FavouriteList.css */
 
+h1 {
+  color: rgb(0, 88, 253);
+  text-align: center;
+  height: 50px;
+  font-size: 35px;
+  text-decoration: underline;
+  background-color: rgb(201, 204, 250);
+}
+.note {
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  left: 38%;
+  padding: 10px;
+}
+
 .favourite-list {
-    list-style: none;
-    padding: 0;
-  }
-  
+  list-style: none;
+  padding: 0;
+}
+
+.favourite-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.favourite-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.favourite-details {
+  flex: 1;
+}
+
+.favourite-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.remove-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+}
+
+@media screen and (min-width: 768px) {
   .favourite-item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 20px;
+    flex-direction: row;
+    align-items: center;
   }
-  
+
   .favourite-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    max-width: 150px;
   }
-  
-  .favourite-details {
-    flex: 1;
-  }
-  
+
   .favourite-title {
-    margin: 0;
-    font-size: 18px;
+    font-size: 20px;
   }
-  
+
   .remove-button {
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 4px;
+    padding: 10px 15px;
   }
-  
-  .remove-button:hover {
-    background-color: #c82333;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .favourite-item {
-      flex-direction: row;
-      align-items: center;
-    }
-    
-    .favourite-image {
-      margin-bottom: 0;
-      margin-right: 20px;
-      max-width: 150px;
-    }
-  
-    .favourite-title {
-      font-size: 20px;
-    }
-  
-    .remove-button {
-      padding: 10px 15px;
-    }
-  }
-  
+}

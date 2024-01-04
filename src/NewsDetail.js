@@ -1,7 +1,7 @@
 // Inside NewsDetail.js
 
-import React from 'react';
-import './NewsDetail.css'; // Import the NewsDetail CSS file
+import React from "react";
+import "./NewsDetail.css"; // Import the NewsDetail CSS file
 
 const NewsDetail = ({ article, onClose }) => {
   return (
@@ -11,9 +11,13 @@ const NewsDetail = ({ article, onClose }) => {
           &times;
         </button>
         <h2>{article.title}</h2>
-        <img src={article.urlToImage} alt={article.title} className="news-image" />
+        <img
+          src={article.urlToImage}
+          alt={article.title}
+          className="news-image"
+        />
         <p>{article.description}</p>
-        <a href={article.url} target="_blank" rel="noopener noreferrer">
+        <a href={article.link} target="_blank" rel="noopener noreferrer">
           Read Full Article
         </a>
       </div>
